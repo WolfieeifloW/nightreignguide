@@ -26,6 +26,10 @@ b u {
     font-size: 2em;
 }
 
+.section {
+    border: 1px solid rgb(30, 30, 30);
+}
+
 /*************************
 Nightlord selection modal
 *************************/
@@ -78,7 +82,7 @@ Nightlord details section
     grid-area: nightlord;
     align-content: center;
     justify-content: center;
-    /* width: 20%; */
+    padding: 5px;
 }
 
 .nightlord {
@@ -159,7 +163,7 @@ Day Info section
     grid-area: day-info;
     align-content: center;
     justify-content: center;
-    padding: 25px;
+    padding: 5px;
 }
 
 /*************************
@@ -170,7 +174,7 @@ Stonesword Keys section
     grid-area: stonesword-keys;
     align-content: center;
     justify-content: center;
-    padding: 25px;
+    padding: 5px;
 }
 
 /*************************
@@ -181,7 +185,7 @@ Mage Towers section
     grid-area: mage-towers;
     align-content: center;
     justify-content: center;
-    padding: 25px;
+    padding: 5px;
 }
 
 /*************************
@@ -192,7 +196,7 @@ Shifting Earth section
     grid-area: shifting-earth;
     align-content: center;
     justify-content: center;
-    padding: 25px;
+    padding: 5px;
 }
 
 .shifting-earth-tabs {
