@@ -3,10 +3,6 @@ html {
     color: white;
 }
 
-body {
-    height: 97vh;
-}
-
 .container {
     display: none;
     grid-template-areas: "nightlord day-info stonesword-keys"
@@ -28,6 +24,7 @@ b u {
 
 .section {
     border: 1px solid rgb(30, 30, 30);
+    margin: 1px;
 }
 
 /*************************
