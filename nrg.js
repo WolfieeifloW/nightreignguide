@@ -1,3 +1,11 @@
+// Changing Shifting Earth tabs
+function f(t) {
+    ['crater', 'mountaintop', 'rotted-woods', 'noklateo'].map(x => document.getElementById(x).style.setProperty('display', 'none')); // Hide the tab we're navigating away from
+    ['crater-tab', 'mountaintop-tab', 'rotted-woods-tab', 'noklateo-tab'].map(x => document.getElementById(x).classList.remove("tab-active")); // Show the tab we're navigating to
+    document.getElementById(t).style.setProperty('display', 'flex'); // Keep flex layout for tabs
+    document.getElementById(t + '-tab').classList.add("tab-active"); // Add the 'tab-active' class to the new tab to show underline
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Storing different elements for future use
     const modal = document.getElementById('nightlord-modal');
@@ -255,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // const weaknessBorder = document.getElementById((data.icon+'-cell').toLowerCase());
             // weaknessBorder.style.border = '1px solid red';
-            weaknessElement = document.getElementById((data.icon+'-cell').toLowerCase());
+            weaknessElement = document.getElementById((data.icon + '-cell').toLowerCase());
             weaknessElement.style.border = '1px solid red';
 
             // Loop over each category in details (weapon, element, ailment, ailment2)
@@ -339,4 +347,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
         weaknessElement.style.border = '1px solid rgb(30, 30, 30)';
     });
+
 });

@@ -9,8 +9,8 @@ body {
 
 .container {
     display: none;
-    grid-template-areas: "nightlord day-info great-churches"
-                         "mage-towers day-info forts";
+    grid-template-areas: "nightlord day-info stonesword-keys"
+                         "mage-towers day-info shifting-earth";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 97vh;
@@ -163,11 +163,11 @@ Day Info section
 }
 
 /*************************
-Great Churches section
+Stonesword Keys section
 *************************/
-.great-churches {
+.stonesword-keys {
     display: grid;
-    grid-area: great-churches;
+    grid-area: stonesword-keys;
     align-content: center;
     justify-content: center;
     padding: 25px;
@@ -185,12 +185,34 @@ Mage Towers section
 }
 
 /*************************
-Forts section
+Shifting Earth section
 *************************/
-.forts {
+.shifting-earth {
     display: grid;
-    grid-area: forts;
+    grid-area: shifting-earth;
     align-content: center;
     justify-content: center;
     padding: 25px;
+}
+
+.shifting-earth-tabs {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.tab {
+    margin: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.tab-active {
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+}
+
+.tabs-page {
+    display: none;
 }
