@@ -5,8 +5,8 @@ html {
 
 .container {
     display: none;
-    grid-template-areas: "nightlord day-info stonesword-keys"
-                         "mage-towers day-info shifting-earth";
+    grid-template-areas: "nightlord stonesword-keys day-info"
+                         "shifting-earth mage-towers day-info";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 97vh;
