@@ -1,0 +1,138 @@
+html {
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+}
+
+/*************************
+ Nightlord selection modal
+*************************/
+div.nightlord-modal-content h1 {
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    z-index: 9998;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nightlord-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    background-color: rgb(25, 25, 25);
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    height: auto;
+}
+
+.nightlord-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+
+.nightlord-grid img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/*************************
+ Nightlord details section
+*************************/
+.nightlord-area {
+    width: 10%;
+}
+
+.nightlord {
+    position: relative;
+    /* top: 10px; */
+    /* left: 10px; */
+    width: 100%;
+    z-index: 9999;
+}
+
+.nightlord-img {
+    display: none;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.nightlord-weakness-icon {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.nightlord-details-container {
+    display: none;
+    flex-direction: column;
+    grid-gap: 0.5vh;
+}
+
+.nightlord-details-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.type-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.row-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row-1 {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 0.75em;
+}
+
+.type-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    border: 1px solid rgb(30, 30, 30);
+}
+
+.type-cell span {
+    /* font-weight: bold; */
+    font-size: 0.8em;
+}
+
+.positive {
+    font-weight: bold;
+    color: green;
+    /* font-size: 0.8em */
+}
+
+.middle {
+    font-weight: normal;
+    color: orange;
+    /* font-size: 0.75em; */
+}
+
+.negative {
+    font-weight: normal;
+    color: red;
+    /* font-size: 0.7em; */
+}
