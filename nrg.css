@@ -1,11 +1,33 @@
 html {
     background-color: black;
     color: white;
-    font-size: 1.25em;
+}
+
+body {
+    height: 97vh;
+}
+
+.container {
+    display: none;
+    grid-template-areas: "nightlord day-info great-churches"
+                         "mage-towers day-info forts";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 97vh;
+    padding: 5px;
+}
+
+b {
+    align-self: center;
+    justify-self: center;
+}
+
+b u {
+    font-size: 2em;
 }
 
 /*************************
- Nightlord selection modal
+Nightlord selection modal
 *************************/
 div.nightlord-modal-content h1 {
     text-align: center;
@@ -18,7 +40,7 @@ div.nightlord-modal-content h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .nightlord-modal-content {
@@ -27,7 +49,7 @@ div.nightlord-modal-content h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid white;
-    background-color: rgb(25, 25, 25);
+    background: rgb(25, 25, 25);
     padding: 20px;
     border-radius: 8px;
     width: 50%;
@@ -49,40 +71,42 @@ div.nightlord-modal-content h1 {
 }
 
 /*************************
- Nightlord details section
+Nightlord details section
 *************************/
 .nightlord-area {
-    width: 10%;
+    display: grid;
+    grid-area: nightlord;
+    align-content: center;
+    justify-content: center;
+    /* width: 20%; */
 }
 
 .nightlord {
     position: relative;
-    /* top: 10px; */
-    /* left: 10px; */
     width: 100%;
     z-index: 9999;
 }
 
 .nightlord-img {
-    display: none;
+    display: grid;
     cursor: pointer;
     margin: auto;
     margin-bottom: 10px;
 }
 
 .nightlord-weakness-icon {
-    display: none;
+    display: grid;
     position: absolute;
-    bottom: 10px;
-    right: 30px;
+    bottom: 5px;
+    right: -45px;
     width: 30px;
     height: 30px;
     pointer-events: none;
 }
 
 .nightlord-details-container {
-    display: none;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
     grid-gap: 0.5vh;
 }
 
@@ -107,32 +131,66 @@ div.nightlord-modal-content h1 {
 }
 
 .type-cell {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
-    gap: 2px;
+    padding: 3px;
     border: 1px solid rgb(30, 30, 30);
-}
-
-.type-cell span {
-    /* font-weight: bold; */
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .positive {
     font-weight: bold;
     color: green;
-    /* font-size: 0.8em */
 }
 
 .middle {
-    font-weight: normal;
     color: orange;
-    /* font-size: 0.75em; */
 }
 
 .negative {
-    font-weight: normal;
     color: red;
-    /* font-size: 0.7em; */
+}
+
+/*************************
+Day Info section
+*************************/
+.day-info {
+    display: grid;
+    grid-area: day-info;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+/*************************
+Great Churches section
+*************************/
+.great-churches {
+    display: grid;
+    grid-area: great-churches;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+/*************************
+Mage Towers section
+*************************/
+.mage-towers {
+    display: grid;
+    grid-area: mage-towers;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+/*************************
+Forts section
+*************************/
+.forts {
+    display: grid;
+    grid-area: forts;
+    align-content: center;
+    justify-content: center;
+    padding: 25px;
 }

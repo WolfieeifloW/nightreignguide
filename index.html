@@ -9,104 +9,211 @@
     <link rel="shortcut icon" href="./images/nrgicon.png" type="image/x-icon" />
 </head>
 <body>
-    <!-- Container for image + details -->
-    <div id="nightlord-area" class="nightlord-area">
-        <!-- Nightlord image and weakness icon -->
-        <div id="nightlord" class="nightlord">
-            <img src="" alt="" id="nightlord-img" class="nightlord-img" />
-            <img src="" alt="" id="nightlord-weakness-icon" class="nightlord-weakness-icon" />
+    <div id="container" class="container">
+        <!-- Container for image + details -->
+        <div id="nightlord-area" class="nightlord-area">
+            <!-- Nightlord image and weakness icon -->
+            <div id="nightlord" class="nightlord">
+                <img src="" alt="" id="nightlord-img" class="nightlord-img" />
+            </div>
+
+            <!-- Nightlord details -->
+            <div id="nightlord-details" class="nightlord-details-container">
+                <!-- Weapon types -->
+                <div class="type-row">
+                    <div id="standard-cell" class="type-cell">
+                        <span id="standard-value-extra"></span>
+                        <img src="./images/Standard.png" alt="Standard" title="Standard">
+                        <span id="standard-value"></span>
+                    </div>
+                    <div id="slash-cell" class="type-cell">
+                        <span id="slash-value-extra"></span>
+                        <img src="./images/Slash.png" alt="Slash" title="Slash">
+                        <span id="slash-value"></span>
+                    </div>
+                    <div id="strike-cell" class="type-cell">
+                        <span id="strike-value-extra"></span>
+                        <img src="./images/Strike.png" alt="Strike" title="Strike">
+                        <span id="strike-value"></span>
+                    </div>
+                    <div id="pierce-cell" class="type-cell">
+                        <span id="pierce-value-extra"></span>
+                        <img src="./images/Pierce.png" alt="Pierce" title="Pierce">
+                        <span id="pierce-value"></span>
+                    </div>
+                </div>
+                <!-- Element types -->
+                <div class="type-row">
+                    <div id="magic-cell" class="type-cell">
+                        <span id="magic-value-extra"></span>
+                        <img src="./images/Magic.png" alt="Magic" title="Magic">
+                        <span id="magic-value"></span>
+                    </div>
+                    <div id="fire-cell" class="type-cell">
+                        <span id="fire-value-extra"></span>
+                        <img src="./images/Fire.png" alt="Fire" title="Fire">
+                        <span id="fire-value"></span>
+                    </div>
+                    <div id="lightning-cell" class="type-cell">
+                        <span id="lightning-value-extra"></span>
+                        <img src="./images/Lightning.png" alt="Lightning" title="Lightning">
+                        <span id="lightning-value"></span>
+                    </div>
+                    <div id="holy-cell" class="type-cell">
+                        <span id="holy-value-extra"></span>
+                        <img src="./images/Holy.png" alt="Holy" title="Holy">
+                        <span id="holy-value"></span>
+                    </div>
+                </div>
+                <!-- Ailment types -->
+                <div class="type-row row-1">
+                    <span>Higher value is harder to apply:</span>
+                </div>
+                <div class="type-row row-3">
+                    <div id="poison-cell" class="type-cell">
+                        <span id="poison-value-extra"></span>
+                        <img src="./images/Poison.png" alt="Poison" title="Poison">
+                        <span id="poison-value"></span>
+                    </div>
+                    <div id="scarlet-rot-cell" class="type-cell">
+                        <span id="scarlet-rot-value-extra"></span>
+                        <img src="./images/Scarlet_Rot.png" alt="Scarlet Rot" title="Scarlet Rot">
+                        <span id="scarlet-rot-value"></span>
+                    </div>
+                    <div id="bleed-cell" class="type-cell">
+                        <span id="bleed-value-extra"></span>
+                        <img src="./images/Bleed.png" alt="Bleed" title="Bleed">
+                        <span id="bleed-value"></span>
+                    </div>
+                </div>
+                <div class="type-row row-3">
+                    <div id="frostbite-cell" class="type-cell">
+                        <span id="frostbite-value-extra"></span>
+                        <img src="./images/Frostbite.png" alt="Frostbite" title="Frostbite">
+                        <span id="frostbite-value"></span>
+                    </div>
+                    <div id="sleep-cell" class="type-cell">
+                        <span id="sleep-value-extra"></span>
+                        <img src="./images/Sleep.png" alt="Sleep" title="Sleep">
+                        <span id="sleep-value"></span>
+                    </div>
+                    <div id="madness-cell" class="type-cell">
+                        <span id="madness-value-extra"></span>
+                        <img src="./images/Madness.png" alt="Madness" title="Madness">
+                        <span id="madness-value"></span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Nightlord details -->
-        <div id="nightlord-details" class="nightlord-details-container">
-            <!-- Weapon types -->
-            <div class="type-row">
-                <div class="type-cell">
-                    <span id="standard-value-extra"></span>
-                    <img src="./images/Standard.png" alt="Standard" title="Standard">
-                    <span id="standard-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="slash-value-extra"></span>
-                    <img src="./images/Slash.png" alt="Slash" title="Slash">
-                    <span id="slash-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="strike-value-extra"></span>
-                    <img src="./images/Strike.png" alt="Strike" title="Strike">
-                    <span id="strike-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="pierce-value-extra"></span>
-                    <img src="./images/Pierce.png" alt="Pierce" title="Pierce">
-                    <span id="pierce-value"></span>
-                </div>
-            </div>
-            <!-- Element types -->
-            <div class="type-row">
-                <div class="type-cell">
-                    <span id="magic-value-extra"></span>
-                    <img src="./images/Magic.png" alt="Magic" title="Magic">
-                    <span id="magic-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="fire-value-extra"></span>
-                    <img src="./images/Fire.png" alt="Fire" title="Fire">
-                    <span id="fire-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="lightning-value-extra"></span>
-                    <img src="./images/Lightning.png" alt="Lightning" title="Lightning">
-                    <span id="lightning-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="holy-value-extra"></span>
-                    <img src="./images/Holy.png" alt="Holy" title="Holy">
-                    <span id="holy-value"></span>
-                </div>
-            </div>
-            <!-- Ailment types -->
-            <div class="type-row row-1">
-                <span>Higher value is harder to apply</span>
-            </div>
-            <div class="type-row row-3">
-                <div class="type-cell">
-                    <span id="poison-value-extra"></span>
-                    <img src="./images/Poison.png" alt="Poison" title="Poison">
-                    <span id="poison-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="scarlet-rot-value-extra"></span>
-                    <img src="./images/Scarlet_Rot.png" alt="Scarlet Rot" title="Scarlet Rot">
-                    <span id="scarlet-rot-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="bleed-value-extra"></span>
-                    <img src="./images/Bleed.png" alt="Bleed" title="Bleed">
-                    <span id="bleed-value"></span>
-                </div>
-            </div>
-            <div class="type-row row-3">
-                <div class="type-cell">
-                    <span id="frostbite-value-extra"></span>
-                    <img src="./images/Frostbite.png" alt="Frostbite" title="Frostbite">
-                    <span id="frostbite-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="sleep-value-extra"></span>
-                    <img src="./images/Sleep.png" alt="Sleep" title="Sleep">
-                    <span id="sleep-value"></span>
-                </div>
-                <div class="type-cell">
-                    <span id="madness-value-extra"></span>
-                    <img src="./images/Madness.png" alt="Madness" title="Madness">
-                    <span id="madness-value"></span>
-                </div>
-            </div>
+        <div id="day-info" class="day-info">
+            <b><u>DAY 1</u></b>
+            <ul>
+                <li><u>Primary Objectives</u></li>
+                <ul>
+                    <li>Do landing camp and level to 2</li>
+                    <li>ONLY get Churches that are not out of the way</li>
+                    <li>Get a better weapon</li>
+                    <li>Should be level 7+</li>
+                    <li>Center castle: basement red eye boss, talisman from middle</li>
+                    <ul>
+                        <li>If it's trolls it may be better to leave and do field bosses</li>
+                    </ul>
+                </ul>
+                <br/>
+                <li><u>Secondary Objectives</u></li>
+                <ul>
+                    <li>Clear Forts & Great Churches for Stonesword Keys</li>
+                    <li>Open Evergaol's, even if you can't complete them</li>
+                    <li>Get a Smithing Stone 2 (can be done on Day 2 too)</li>
+                    <li>Getting Talismans (treasure goblins)</li>
+                </ul>
+                <br/>
+                <li><u>Field Bosses:</u></li>
+                <ul>
+                    <li>SAFE: Leonine, Lion, Red Wolf, Miranda flower, Hippo, Black Knife Asssassin, Demi-Human Queen</li>
+                </ul>
+            </ul>
+            <br/>
+            <b><u>DAY 2</u></b>
+            <ul>
+                <li><u>Primary Objectives</u></li>
+                <ul>
+                    <li>Can do shifting earth zone on Day 2</li>
+                    <li>Kill field bosses for good XP</li>
+                    <li>Should be level 10+</li>
+                </ul>
+                <li><u>Secondary Objectives</u></li>
+                <ul>
+                    <li>Anything you didn't get done on Day 1</li>
+                </ul>
+            </ul>
+            <br/>
+            <b><u>RANDOM INFO</u></b>
+            <ul>
+                <li>You get ~14 minutes per day</li>
+                <li>Top of fort has map to mark treasure goblins</li>
+                <li>Get Evergaol key from Forts or Great Churches</li>
+                <ul>
+                    <li>Evergaol bosses scale with time (not level)</li>
+                </ul>
+                <li>Run past small enemies, don't waste time fighting them</li>
+            </ul>
         </div>
-    </div>
 
-    <div class="other-info">
+        <div id="great-churches" class="great-churches">
+            <b><u>Great Churches</u></b>
+            Stonesword Key Possible Locations:
+            <ul>
+                <li>Up in scaffolding</li>
+                <li>If there is a hole:</li>
+                <ul>
+                    <li>Underground past boss in right room</li>
+                    <li>Behind 'altar' on ground level</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div id="mage-towers" class="mage-towers">
+            <b><u>Mage Towers</u></b>
+            <ul>
+                <li><b>If there is a door:</b></li>
+                <ul>
+                    <li>Misty door w/ no symbol = fake door</li>
+                    <li>Sigil above door = attack it</li>
+                    <li>Shack = left side of tower and attack</li>
+                    <li>Dead trees on left side = attack trees</li>
+                    <li>Imp statue = attack it</li>
+                    <li>Invisible crest = pond reveals location</li>
+                    <li>Rotting tree stump = chase and kill</li>
+                    <li>Shaking trees = attack and kill</li>
+                </ul>
+                <li><b>If there is no door:</b></li>
+                <ul>
+                    <li>Extinguished candle = attack it</li>
+                    <li>If candle is lit, hit back right wall</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div id="forts" class="forts">
+            <b><u>Forts</u></b>
+            Stonesword Key Possible Locations:
+            <ul>
+                <li><u>'Go under' type fort:</u></li>
+                <ul>
+                    <li>Second floor, right room</li>
+                    <li>Roof, chests beneath stairs</li>
+                    <li>Roof, top of left or right tower beside top of stairs</li>
+                </ul>
+                <li><u>'Front stairs' type fort:</u></li>
+                <ul>
+                    <li>Bottom floor, back room</li>
+                    <li>Roof, chest in back</li>
+                    <li>Roof, top of left or right tower beside top of stairs</li>
+                </ul>
+            </ul>
+        </div>
     </div>
 
     <!-- Modal to select nightlord -->

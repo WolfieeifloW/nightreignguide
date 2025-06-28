@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Storing different elements for future use
     const modal = document.getElementById('nightlord-modal');
-    const nightlordArea = document.getElementById('nightlord-area');
+    const container = document.getElementById('container');
     const images = document.querySelectorAll('.nightlord-grid img');
     const selectedNightlordImg = document.getElementById('nightlord-img');
-    const selectedNightlordWeaknessIcon = document.getElementById('nightlord-weakness-icon');
-    const nightlordDetails = document.getElementById('nightlord-details');
+    let weaknessElement;
 
     // Nightlord data: icon + details (images and values)
     const nightlordData = {
@@ -211,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // When a nightlord is clicked
+    // When a Nightlord is clicked
     images.forEach(function (img) {
         img.addEventListener('click', function () {
             const name = img.alt;
@@ -224,23 +223,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // Hide modal
+            // Hide modal and display page
             modal.style.display = 'none';
-
-            nightlordArea.style.display = 'block';
+            container.style.display = 'grid';
 
             // Set selected Nightlord image
             selectedNightlordImg.src = './images/' + imageFileName;
             selectedNightlordImg.alt = name;
-            selectedNightlordImg.style.display = 'block';
-
-            // Set selected Nightlord weakness icon
-            selectedNightlordWeaknessIcon.src = './images/' + data.icon + '.png';
-            selectedNightlordWeaknessIcon.alt = data.icon;
-            selectedNightlordWeaknessIcon.style.display = 'block';
-
-            // Display the selected Nightlord details
-            nightlordDetails.style.display = 'grid';
 
             const detailIds = {
                 weapon: {
@@ -263,6 +252,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Set values from the nightlord details
             const details = data.details;
+
+            // const weaknessBorder = document.getElementById((data.icon+'-cell').toLowerCase());
+            // weaknessBorder.style.border = '1px solid red';
+            weaknessElement = document.getElementById((data.icon+'-cell').toLowerCase());
+            weaknessElement.style.border = '1px solid red';
 
             // Loop over each category in details (weapon, element, ailment, ailment2)
             for (const category in details) {
@@ -335,19 +329,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Resetting the page when selected Nightlord image is clicked
     selectedNightlordImg.addEventListener('click', function () {
-        nightlordArea.style.display = 'none';
+        container.style.display = 'none';
+        modal.style.display = 'grid';
 
         selectedNightlordImg.src = '';
         selectedNightlordImg.alt = '';
-        selectedNightlordImg.style.display = 'none';
 
-        selectedNightlordWeaknessIcon.src = '';
-        selectedNightlordWeaknessIcon.alt = '';
-        selectedNightlordWeaknessIcon.style.display = 'none';
-
-        nightlordDetails.style.display = 'none';
-
-        modal.style.display = 'block';
+        weaknessElement.style.border = '1px solid rgb(30, 30, 30)';
     });
 });
