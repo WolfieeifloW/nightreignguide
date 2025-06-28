@@ -201,6 +201,7 @@ Shifting Earth section
     justify-content: space-between;
     text-align: center;
     margin: 8px 0;
+    width: 100%;
 }
 
 .tab {
@@ -210,10 +211,14 @@ Shifting Earth section
 }
 
 .tab-active {
-    border-bottom: 1px solid;
-    border-bottom-color: white;
+    border-bottom: 1px solid white;
 }
 
 .tabs-page {
     display: none;
+}
+
+.shifting-earth-content {
+    min-width: 450px;
+    min-height: 125px;
 }
