@@ -71,23 +71,23 @@ document.addEventListener('DOMContentLoaded', function () {
             details: {
                 weapon: {
                     icons: ['Standard.png', 'Slash.png', 'Strike.png', 'Pierce.png'],
-                    values: ['+15%', '+25%', '+15%', '+25%'],
-                    extras: ['-10%', '-20%', '+20%', '+10%']
+                    values: ['-10%', '-20%', '+20%', '+10%'],
+                    extras: ['+15%', '+25%', '+15%', '+25%']
                 },
                 element: {
                     icons: ['Magic.png', 'Fire.png', 'Lightning.png', 'Holy.png'],
-                    values: ['-50%', '+40%', '-10%', '-10%'],
-                    extras: ['-10%', '+35%', '-10%', '-10%']
+                    values: ['-10%', '+35%', '-10%', '-10%'],
+                    extras: ['-50%', '+40%', '-10%', '-10%']
                 },
                 ailment: {
                     icons: ['Poison.png', 'Scarlet_Rot.png', 'Bleed.png', ''],
-                    values: ['542', '154', '154', ''],
-                    extras: ['252', '154', '154', '']
+                    values: ['252', '154', '154', ''],
+                    extras: ['542', '154', '154', '']
                 },
                 ailment2: {
                     icons: ['Frostbite.png', 'Sleep.png', 'Madness.png', ''],
-                    values: ['154', '542', '-', ''],
-                    extras: ['154', '154', '-', '']
+                    values: ['154', '154', '-', ''],
+                    extras: ['154', '542', '-', '']
                 }
             }
         },
@@ -196,13 +196,13 @@ document.addEventListener('DOMContentLoaded', function () {
             details: {
                 weapon: {
                     icons: ['Standard.png', 'Slash.png', 'Strike.png', 'Pierce.png'],
-                    values: ['-', '+15%', '-10%', '+10%'],
-                    extras: ['-', '-10%', '+10%', '+15%']
+                    values: ['-', '-10%', '+10%', '+15%'],
+                    extras: ['-', '+15%', '-10%', '+10%']
                 },
                 element: {
                     icons: ['Magic.png', 'Fire.png', 'Lightning.png', 'Holy.png'],
-                    values: ['-', '+20%', '-', '+35%'],
-                    extras: ['-', '-', '+20%', '+20%']
+                    values: ['-', '-', '+20%', '+20%'],
+                    extras: ['-', '+20%', '-', '+35%']
                 },
                 ailment: {
                     icons: ['Poison.png', 'Scarlet_Rot.png', 'Bleed.png', ''],
