@@ -53,13 +53,13 @@ div.nightlord-modal-content h1 {
     background: rgb(25, 25, 25);
     padding: 20px;
     border-radius: 8px;
-    width: 50%;
+    width: 75%;
     height: auto;
 }
 
 .nightlord-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1%;
 }
 
@@ -180,6 +180,8 @@ Mage Towers section
 .mage-towers {
     display: grid;
     grid-area: mage-towers;
+    grid-template-columns: auto 0.75fr;
+    gap: 25px;
     align-content: center;
     justify-content: center;
     padding: 5px;

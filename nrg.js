@@ -345,11 +345,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                     valueElem.classList.add('negative');
                                 }
                             } else if (category === 'ailment' || category === 'ailment2') {
-                                if (value === '154') {
+                                if (value <= 154) {
                                     valueElem.classList.add('positive');
-                                } else if (value === '252') {
+                                } else if (value <= 252) {
                                     valueElem.classList.add('middle');
-                                } else if (value === '542') {
+                                } else if (value <= 542) {
                                     valueElem.classList.add('negative');
                                 }
                             }
@@ -372,11 +372,11 @@ document.addEventListener('DOMContentLoaded', function () {
                                     extraElem.classList.add('negative');
                                 }
                             } else if (category === 'ailment' || category === 'ailment2') {
-                                if (extra === '154') {
+                                if (extra <= 154) {
                                     extraElem.classList.add('positive');
-                                } else if (extra === '252') {
+                                } else if (extra <= 252) {
                                     extraElem.classList.add('middle');
-                                } else if (extra === '542') {
+                                } else if (extra <= 542) {
                                     extraElem.classList.add('negative');
                                 }
                             }
