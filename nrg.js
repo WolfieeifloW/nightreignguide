@@ -215,7 +215,57 @@ document.addEventListener('DOMContentLoaded', function () {
                     extras: ['-', '542', '-', '']
                 }
             }
-        }
+        },
+        'Balancers': {
+            icon: 'Sleep',
+            details: {
+                weapon: {
+                    icons: ['Standard.png', 'Slash.png', 'Strike.png', 'Pierce.png'],
+                    values: ['-', '-8%', '+10%', '-'],
+                    extras: ['', '', '', '']
+                },
+                element: {
+                    icons: ['Magic.png', 'Fire.png', 'Lightning.png', 'Holy.png'],
+                    values: ['-', '-8%', '-10%', '-30%'],
+                    extras: ['', '', '', '']
+                },
+                ailment: {
+                    icons: ['Poison.png', 'Scarlet_Rot.png', 'Bleed.png', ''],
+                    values: ['252', '252', '252', ''],
+                    extras: ['', '', '', '']
+                },
+                ailment2: {
+                    icons: ['Frostbite.png', 'Sleep.png', 'Madness.png', ''],
+                    values: ['252', '84', '-', ''],
+                    extras: ['', '', '', '']
+                }
+            }
+        },
+        'Dreglord': {
+            icon: 'Holy',
+            details: {
+                weapon: {
+                    icons: ['Standard.png', 'Slash.png', 'Strike.png', 'Pierce.png'],
+                    values: ['-', '+10%', '-', '+10%'],
+                    extras: ['', '', '', '']
+                },
+                element: {
+                    icons: ['Magic.png', 'Fire.png', 'Lightning.png', 'Holy.png'],
+                    values: ['-', '+20%', '-10%', '+25%'],
+                    extras: ['', '', '', '']
+                },
+                ailment: {
+                    icons: ['Poison.png', 'Scarlet_Rot.png', 'Bleed.png', ''],
+                    values: ['542', '542', '252', ''],
+                    extras: ['', '', '', '']
+                },
+                ailment2: {
+                    icons: ['Frostbite.png', 'Sleep.png', 'Madness.png', ''],
+                    values: ['252', '252', '-', ''],
+                    extras: ['', '', '', '']
+                }
+            }
+        },
     };
 
     // When a Nightlord is clicked
