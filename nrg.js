@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // const weaknessBorder = document.getElementById((data.icon+'-cell').toLowerCase());
             // weaknessBorder.style.border = '1px solid red';
             weaknessElement = document.getElementById((data.icon + '-cell').toLowerCase());
-            weaknessElement.style.border = '1px solid red';
+            weaknessElement.style.border = '1px solid green';
 
             // Loop over each category in details (weapon, element, ailment, ailment2)
             for (const category in details) {
